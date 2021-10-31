@@ -10,40 +10,201 @@
     </head>
 
     <body>
-        <img src="https://www.mandatory.com/assets/uploads/2017/10/Screen-Shot-2017-10-09-at-12.58.15-PM-390x312.png" width="250" height="200" alt="logo de vitroscience">
-        <br>
-        <a href="https://www.mandatory.com/girls/1330923-2-big-reasons-jessica-weaver-popular-instagram" target="blank"> foto provista por Mandatory</a>
-        <br>
-        <!-- esta es una foto de ejemplo solamente no va en el sitio final-->
-        <img src="../images/example.jpg" alt="image ejemplo">
-        <br>
-        
+        <div>
+         <img src="pictures/VitroScience_Logo.png" width="250" height="100" alt="logo de vitroscience">
+            
+            <br>
+         <!-- esta es una foto de ejemplo solamente no va en el sitio final-->
 
-
-        <a href="dashboard.html"> ir al Dashboard</a>
-        <image src="../images/example.jpg" type="jpg" >
-
-
-        <h1>Sistema de trackeo logistico -TrackLog<sup>TM</sup></h1>
+            <h1>Sistema de trackeo logistico -TrackLog<sup>TM</sup></h1>
+            <hr>
         <!--tengo que crear dos calanedarios y cruadros de texto para dejar la info, drop down list de proveedores y drop down list de couriers-->
+        </div>
+        <div>
         <p>Ingreso fecha de solitud de <i>proforma invoice</i> y de envio de swift (si corresponde)</p>
+        </div>
+
 
         <!--This is my test lorem ipsum. This is my test lorem ipsum. This is my test lorem ipsum. This is my test lorem ipsum. This is my test lorem ipsum. This is my test lorem ipsum. This is my test lorem ipsum. This is my test lorem ipsum. This is my test lorem ipsum.
 A linebreak before this.-->
 
-
-        <h2>Ingreso Pedido</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset </p>
+        <div>
             
+         <h2>Ingreso Pedido</h2>
+            <table>
+                <thead>
+                    <th>Proveedor</th>
+                    <th>Valor</th>
+                    <th>Moneda</th>
+                    <th>#P.O.</th>
+                </thead>
+                    <td>
+                        <form action="data.html"></form>
+                        <select name="new_order_to_track" id="new_order_to_track">
+                            <option value="null">----</option>
+                            <option value="Diazyme">Diazyme</option>
+                            <option value="SD Biosensor">SD Biosensor</option>
+                            <option value="Stanbio">Stanbio (EKF)</option>
+                            <option value="ThermoFisher(QC)">Thermo-QC</option>
+                            <option value="ThermoFisher(Rx)">Thermo-Rx</option>
+                            <option value="LabQuality">LabQuality</option>
+                            <option value="PNCQ">PNCQ</option>
 
-        <h2>Ingreso <abbr title="Airway bill"> AWB</abbr></h3>
+                        </select>
+
+                    </td>
+                    <td>
+                        <form action="data.html"></form>
+                        <input type="number">
+                    
+                    </td>
+                    <td>
+                        <form action="data.html"></form>
+                        <select name="currency" id="currency">
+                            <option value="usd">USD</option>
+                            <option value="euro">EUR</option>
+
+                        </select>
+
+                    </td>
+                    <td>
+                        <form action="data.html"></form>
+                        <input type="text">
+
+
+                    </td>
+                
+            </table>
+            
+        
+        </div>   
+
+        <div>   
+
+             <h2>Ingreso <abbr title="Airway bill"> AWB</abbr></h2>
+
+            <table>
+                <thead> 
+                    <th>Proveedor</th>
+                    <th>Numero AWB</th>
+                    <th>Courier</th>
+                    <th>Fecha Salida</th>
+                    <th>Fecha Est. LLegada</th>
+                    <th>Doumentacion</th>
+                    <th>CDA enviado</th>
+                    <th>Agente Aduana</th>
+                    <th>LLegada a Chile</th>
+                    <th>Recepcion en Oficina</th>
+
+                </thead>
+                <tbody>
+                    <td>
+                        <form action="data.html"></form>
+                            <select name="Provider" id="provider_">
+                        
+                                <option value="null">----</option>
+                                <option value="Diazyme">Diazyme</option>
+                                <option value="SD Biosensor">SD Biosensor</option>
+                                <option value="Stanbio">Stanbio (EKF)</option>
+                                <option value="ThermoFisher(QC)">Thermo-QC</option>
+                                <option value="ThermoFisher(Rx)">Thermo-Rx</option>
+                                <option value="LabQuality">LabQuality</option>
+                                <option value="PNCQ">PNCQ</option>
+                             </select>
+
+                    </td>
+                    <td>
+                        <form action="data.html">
+                            <input type="text">
+                        </form>
+
+                    </td>
+                    <td>
+                        <form action="data.html">
+                            <select name="courier" id="courier">
+                                <option value="DHL">DHL</option>
+                                <option value="FEDEX">FEDEX</option>
+                                <option value="Forwarder">Forwarder</option>
+                                <option value="Other">Otro</option>
+                            </select>
+
+                        </form>
+
+                    </td>
+                    <td>Aca va un calendario</td> <!--necesito ver como poner calendarios-->
+                    <td>aca va otro calendario</td>
+                    <td>
+                        <form action="data.html"></form>
+                            <input type="checkbox" name="status_doc" value="invoice" checked="checked"> Invoice
+                            <br>
+                            <input type="checkbox" name="status_doc" value="PL"> PL
+                            <br>
+                            <input type="checkbox" name="status_doc" value="CDA"> CDA
+                            
+                    </td>
+                    <td>
+                        <form action="data.html">
+                            <input type="checkbox" name="status_env_cda" id="status_yes_send_cda"> Enviado
+                            <br>
+                            <input type="checkbox" name="status_env_cda" id="status_no_send_cda"> No Enviado
+                        </form> 
+
+                    </td>
+                    <td>
+                        <form action="data.html">
+                            <select name="agente_aduana" id="agente_aduana">
+                                <option value="null">Sin definir</option>
+                                <option value="Agente">Agente</option>
+                                <option value="Courier">Courier</option>
+                            </select>
+                        </form>
+
+                    </td>
+                    <td>
+                        <p>aca va un calendario</p>
+
+                    </td>
+                    <td>
+                        <p>aca va un calendario</p>
+
+                    </td>
+
+
+                </tbody>
+
+            </table>
+            
+        </div>
+
+        <div>
+            
+            <h2>Estado de Envios</h2>
+
+        
+                <table>
+                    <thead>
+                        <th>Proveedor</th>
+                        <th>AWB</th>
+                        <th>Fecha Salida</th>
+                        <th>Fecha Llegada</th>
+                        <th>Estado Documentacion</th>
+                        <th>Estado del Envio</th>
+
+                    </thead>
+                    <tbody>
+                        <td>aca trae dato</td>
+                        <td>aca trae dato</td>
+                        <td>aca trae dato</td>
+                        <td>aca trae dato</td>
+                        <td>aca trae dato</td>
+                        <td>aca trae dato</td>
 
 
 
+                    </tbody>
+                </table>
 
-
-
-        <h2>Estado de Envios</h3>
+        </div>         
 
         
 
