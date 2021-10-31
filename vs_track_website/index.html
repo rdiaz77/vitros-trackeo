@@ -11,28 +11,33 @@
     </head>
 
     <body>
-        <div>
+        <div class="logo">
          <img src="pictures/VitroScience_Logo.png" width="250" height="100" alt="logo de vitroscience">
             
             <br>
          <!-- esta es una foto de ejemplo solamente no va en el sitio final-->
+        
+        </div>
 
+        <div>
+            
             <h1>Sistema de trackeo logistico -TrackLog<sup>TM</sup></h1>
             <hr>
-        <!--tengo que crear dos calanedarios y cruadros de texto para dejar la info, drop down list de proveedores y drop down list de couriers-->
+            <!--tengo que crear dos calanedarios y cruadros de texto para dejar la info, drop down list de proveedores y drop down list de couriers-->
         </div>
+
+
         <div>
-        <p>Ingreso fecha de solitud de <i>proforma invoice</i> y de envio de swift (si corresponde)</p>
+
+            <p>Ingreso fecha de solitud de <i>proforma invoice</i> y de envio de swift (si corresponde)</p>
+
         </div>
 
-
-        <!--This is my test lorem ipsum. This is my test lorem ipsum. This is my test lorem ipsum. This is my test lorem ipsum. This is my test lorem ipsum. This is my test lorem ipsum. This is my test lorem ipsum. This is my test lorem ipsum. This is my test lorem ipsum.
-A linebreak before this.-->
 
         <div>
             
          <h2>Ingreso Pedido</h2>
-            <table>
+            <table class="new_po">
                 <thead>
                     <th>Proveedor</th>
                     <th>Valor</th>
@@ -94,7 +99,7 @@ A linebreak before this.-->
         
         </div>   
 
-        <div>   
+        <div class="ingreso_AWB">   
 
              <h2>Ingreso <abbr title="Airway bill"> AWB</abbr></h2>
 
@@ -103,18 +108,18 @@ A linebreak before this.-->
                     <th>Proveedor</th>
                     <th>Numero AWB</th>
                     <th>Courier</th>
-                    <th>Fecha Salida</th>
-                    <th>Fecha Est. LLegada</th>
+                    <th>F. Salida</th>
+                    <th>F. Est. LLegada</th>
                     <th>Doumentacion</th>
                     <th>CDA enviado</th>
                     <th>Agente Aduana</th>
                     <th>LLegada a Chile</th>
-                    <th>Recepcion en Oficina</th>
+                    <th>Recep. en Oficina</th>
 
                 </thead>
                 <tbody>
                     <td>
-                        <form action="data.html"></form>
+                        <form action="data.html">
                             <select name="Provider" id="provider_">
                         
                                 <option value="null">----</option>
@@ -126,14 +131,17 @@ A linebreak before this.-->
                                 <option value="LabQuality">LabQuality</option>
                                 <option value="PNCQ">PNCQ</option>
                              </select>
+                        </form>     
 
                     </td>
                     <td>
                         <form action="data.html">
                             <input type="text">
+
                         </form>
 
                     </td>
+
                     <td>
                         <form action="data.html">
                             <select name="courier" id="courier">
@@ -146,8 +154,10 @@ A linebreak before this.-->
                         </form>
 
                     </td>
+
                     <td>Aca va un calendario</td> <!--necesito ver como poner calendarios-->
                     <td>aca va otro calendario</td>
+
                     <td>
                         <form action="data.html"></form>
                             <input type="checkbox" name="status_doc" value="invoice" checked="checked"> Invoice
