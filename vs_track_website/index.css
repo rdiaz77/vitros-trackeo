@@ -22,6 +22,12 @@ h2  {
 
 }
 
+.aling-right    {
+    float: right;
+    width: 250px;
+    height: 90px;
+
+}
 
 table   {
 
@@ -35,7 +41,9 @@ table   {
 
 }
 
-
+.fecha  {
+    text-align: center;
+}
 
 
 
